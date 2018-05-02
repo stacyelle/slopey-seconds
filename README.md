@@ -17,6 +17,9 @@ Slopey Seconds | crowdsourced ski run conditions
 4. Connects to Firebase to keep rating's saved
 
 Bootstrap / Flexbox - CSS
+
 HTML
+
 Firebase - Database
+
 jQuery - Javascript
