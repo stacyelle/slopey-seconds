@@ -1,25 +1,31 @@
 # slopey-seconds
-Slopey Seconds | crowdsourced ski run conditions 
+Slopey Seconds | crowdsourced ski / snowboarding run conditions 
 
+This project combines the Google Maps API and the Powder Project API to search for specific ski / snowboarding trail names and allow users to evaluate their public rating, trail length, elevation, and longitude/latitude. 
 
-1. Front Page --> Log-In  (Modal) (https://rishabhp.github.io/bideo.js/)
+## Model
 
-2. Log-in to Landing Page
-* Most popular searches of the day
-* Most recently rated
-* Search Bar 
-** State VS City VS Resort VS Slope (auto-filtered by google maps?)
+This project is broken down into these 3 pages:
 
-3. Landing Page --> Search Return
-* Map
-* Rating System (Thumbs Up / Thumbs Down)
+1. Home Page that includes:
+* Moving Background Image
+* Navigation Bar that includes Sign Up Modal + Search Bar
+* Footer Bar with About Us Button
 
-4. Connects to Firebase to keep rating's saved
+2. Search Results Page that includes: 
+* Name of Trail
+* Google Map Image (Based on Longitude / Latitude)
+* Difficulty
+* Trail Length
+* 0-4 Star Rating System
+* Elevation 
 
-Bootstrap / Flexbox - CSS
+3. About Page that includes: 
+* Logo
+* Mission
+* Founders Photos
 
-HTML
+## APIs Used
 
-Firebase - Database
-
-jQuery - Javascript
+Powder Project API = https://www.powderproject.com/data
+Google Maps API = https://developers.google.com/maps/documentation/
