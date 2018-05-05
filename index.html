@@ -6,31 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Slopey Seconds</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" ></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
+    <script src="search.js"></script>
 </head>
 <body>
-    <h1>HELLLLLOOOOOOOOOOO</h1>
-    <div class="video-background">
+    <div class="jumbotron">
         <video autoplay loop id="video-background" muted plays-inline>
             <source src="img/snowboard.mp4" type="video/mp4">
         </video>
         <div id="overlay"></div>
+        <div class="container">
+            <div class="title">
+                <div class="buttons">
+                    <a href="#" class="transparent_btn signup">sign up</a>
+                    <div class="search-container">
+                        <form>
+                            <input id="search-input" type="text" placeholder="Enter a city, state..." name="search">
+                            <a id="search-button" href="#" class="transparent_btn search">get slopey!</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="logo">
+                    <img id="logo-img" src="img/logo-transparent.png" />
+                </div>
+                <img class='arrow' src='./img/down_arrow.png' />
+            </div>
         </div>
-    <div class="container">
-        <div class="title">
-
-            <div class="logo">
-                <img id="logo-img" src="img/logo-transparent.png" />
-            </div>
-            <div class="buttons">
-                <a href="#" class="transparent_btn">login</a>
-                <a href="#" class="transparent_btn">register</a>
-                <a href="#" class="transparent_btn">what's slopey</a>
-            </div>
-            <div class="login">
-
-            </div>
+    </div>
+    <div id="intro">
+        <div class="container d-flex">
+            <h5 class="intro-header">What Is Slopey Seconds?</h5>
+        </div>
+        <div class="container d-flex intro">
+            <p class="intro-text">That run sure is pretty sweet. Maybe you have a shot at shredding it, maybe you don’t. Maybe it’s deceptively out of your league. Don’t worry... odds are, someone has been there before you. Welcome to Slopey Seconds. The place to find out what you’re in for before you get your heart broken... or your leg.  </p>
         </div>
     </div>
 </body>
