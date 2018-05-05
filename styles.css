@@ -1,68 +1,135 @@
 body {
-    margin: 0;
-    padding: 0;
-  /*  Background fallback in case of IE8 & or in case video doens't load */
-    background: #333;
-    background-attachment: fixed;
-    background-size: cover;
-  }
-  
-  #video-background {
-    position: fixed;
-    right: 0; 
-    top: 0;
-    min-width: 100vh; 
-    min-height: 100vh;
-    width: auto; 
-    height: auto;
-    z-index: -100;
-  }
-  
-  #overlay {
-    position: absolute;
-    top: 0; right: 0; left: 0; bottom: 0;
-     z-index: -99;
-    background: rgba(151,82,14,0.3);
-  }
+  margin: 0px;
+  padding: 0px;
+/*  Background fallback in case of IE8 & or in case video doens't load */
+  background: #333;
+  background-attachment: fixed;
+  background-size: cover;
+}
 
-  #logo-img {
-    height: 65vh;
-  }
-  
-  div.logo {
-      display: flex;
-      height: 80vh;
-      margin-right: 50px;
-      justify-content: center;
-      align-items: center;
-  }
+#video-background {
+position: fixed;
+right: 0; 
+top: 0;
+height: auto;
+max-width: 1800px;
+z-index: -100;
+}
 
-  .transparent_btn {
-	display: inline-block;
-	padding: 10px 14px;
-	color: #FFF;
-	border: 1px solid #FFF;
-	text-decoration: none;
-	font-size: 14px;
-	line-height: 120%;
-	background-color: rgba(255,255,255, 0);
-	border-radius: 4px;
-	transition: background-color 300ms ease;
-    cursor: pointer;
-    font-family: 'Raleway', sans-serif;
+div.jumbotron {
+background-color: rgba(151,82,14,0.3);
+margin-top: 0px;
+max-height: 1200px;
+min-height: 700px;
+min-width: cover;
+background-repeat: no-repeat;
+background-position: center;
+-webkit-background-size: cover;
+background-size: cover;
+border-radius: 0px;
+}
+
+#intro {
+background: rgb(223, 222, 221);
+padding-top: 30px;
+padding-bottom: 30px;
+position: relative;
+bottom: 00px;
+font-family: 'Raleway', sans-serif;
+} 
+
+#intro h5, p {
+color: #75450d;
+}
+
+.intro-text {
+  padding: 10px 20px;
+  line-height: 2.5em;
+}
+
+.intro-header {
+  text-align: left;
+  padding-left: 20px;
+  font-size: 18px;
+}
+
+#logo-img {
+height: 55vh;
+}
+
+div.logo {
+  display: flex;
+  height: 70vh;
+  width: auto;
+  margin-right: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.transparent_btn {
+display: inline-block;
+padding: 10px 14px;
+color: #FFF;
+border: 1px solid #FFF;
+text-decoration: none;
+font-size: 14px;
+line-height: 120%;
+background-color: rgba(255,255,255, 0);
+/* border-radius: 4px; */
+transition: background-color 300ms ease;
+  cursor: pointer;
+font-family: 'Raleway', sans-serif;
 }
 
 .transparent_btn:hover {
-	background-color: rgba(255,255,255, 0.3);
-	color: #FFF;
+background-color: rgba(255,255,255, 0.3);
+color: #FFF;
 }
 
 div.buttons {
-    display: flex;
-    width: 80vh;
-    padding-top: 20px;
-    padding-left: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: space-between;
+  display: flex;
+  /* width: 80vh; */
+  padding: 20px 50px 0px 50px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+
+#search-input {
+background-color: rgba(255,255,255, 0);
+border: 1px solid #FFF;
+text-decoration: none;
+padding: 10px 14px;
+font-size: 14px;
+line-height: 120%;
+font-family: 'Raleway', sans-serif;
+color: #FFF;
+margin-right: 0px;
+}
+
+::placeholder {
+color: #FFF;
+}
+
+input:focus { 
+outline: none !important;
+border-color: rgb(206, 158, 113);
+box-shadow: 0 0 20px rgb(206, 169, 113);
+}
+
+a.signup {
+margin: 0 70px 0 30px;;
+}
+
+a.search {
+margin-left: 0px;
+}
+
+
+.arrow {
+display: block;
+position: fixed;
+bottom: 35px;
+left: 48%;
+margin: 0 auto;
 }
