@@ -96,6 +96,14 @@ div.buttons {
   justify-content: space-between;
 }
 
+.modal-content {
+  background-color:rgba(255,255,255, 0.8);
+}
+
+label {
+  font-family: 'Raleway', sans-serif;
+}
+
 #search-input {
 background-color: rgba(255,255,255, 0);
 border: 1px solid #FFF;
@@ -125,7 +133,6 @@ margin: 0 70px 0 30px;;
 a.search {
 margin-left: 0px;
 }
-
 
 .arrow {
 display: block;
