@@ -30,7 +30,7 @@ border-radius: 0px;
 }
 
 #intro {
-background: rgb(223, 222, 221);
+background: rgb(218, 215, 212);
 padding-top: 30px;
 padding-bottom: 30px;
 position: relative;
@@ -39,18 +39,19 @@ font-family: 'Raleway', sans-serif;
 } 
 
 #intro h5, p {
-color: #75450d;
+  color: #75450d;
 }
 
 .intro-text {
-  padding: 10px 20px;
+  padding: 10px 40px;
   line-height: 2.5em;
 }
 
 .intro-header {
   text-align: left;
-  padding-left: 20px;
+  padding-left: 40px;
   font-size: 18px;
+  font-family: 'Bukhari', sans-serif;
 }
 
 #logo-img {
@@ -132,4 +133,14 @@ position: fixed;
 bottom: 35px;
 left: 48%;
 margin: 0 auto;
+}
+
+@font-face {
+  font-family: Bukhari;
+  src: url(BukhariScript-Regular.otf);
+}
+
+@font-face {
+  font-family: Nickainley;
+  src: url(Nickainley.ttf);
 }
