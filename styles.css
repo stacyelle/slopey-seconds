@@ -8,54 +8,32 @@ body {
 }
 
 #video-background {
-position: fixed;
-right: 0; 
-top: 0;
-height: auto;
-max-width: 1800px;
-z-index: -100;
+  position: fixed;
+  right: 0; 
+  top: 0;
+  height: auto;
+  max-width: 1800px;
+  z-index: -100;
 }
 
 div.jumbotron {
-background-color: rgba(151,82,14,0.3);
-margin-top: 0px;
-max-height: 1200px;
-min-height: 700px;
-min-width: cover;
-background-repeat: no-repeat;
-background-position: center;
--webkit-background-size: cover;
-background-size: cover;
-border-radius: 0px;
+  background-color: rgba(151,82,14,0.3);
+  margin-top: 0px;
+  margin-bottom: 0px;
+  max-height: 1200px;
+  min-height: 700px;
+  min-width: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  border-radius: 0px;
+  padding: 0px;
 }
 
-#intro {
-background: rgb(218, 215, 212);
-padding-top: 30px;
-padding-bottom: 30px;
-position: relative;
-bottom: 00px;
-font-family: 'Raleway', sans-serif;
-} 
-
-#intro h5, p {
-  color: #75450d;
-}
-
-.intro-text {
-  padding: 10px 40px;
-  line-height: 2.5em;
-}
-
-.intro-header {
-  text-align: left;
-  padding-left: 40px;
-  font-size: 18px;
-  font-family: 'Bukhari', sans-serif;
-}
 
 #logo-img {
-height: 55vh;
+  height: 55vh;
 }
 
 div.logo {
@@ -67,24 +45,33 @@ div.logo {
   align-items: center;
 }
 
-.transparent_btn {
-display: inline-block;
-padding: 10px 14px;
-color: #FFF;
-border: 1px solid #FFF;
-text-decoration: none;
-font-size: 14px;
-line-height: 120%;
-background-color: rgba(255,255,255, 0);
-/* border-radius: 4px; */
-transition: background-color 300ms ease;
-  cursor: pointer;
-font-family: 'Raleway', sans-serif;
+a.transparent_btn, button.transparent_btn {
+  display: inline-block;
+  padding: 10px 14px;
+  color: #FFF;
+  border: 1px solid #FFF;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 120%;
+  background-color: rgba(255,255,255, 0);
+  border-radius: 0px;
+  transition: background-color 300ms ease;
+    cursor: pointer;
+  font-family: 'Raleway', sans-serif;
 }
 
-.transparent_btn:hover {
-background-color: rgba(255,255,255, 0.3);
-color: #FFF;
+a.transparent_btn:hover, button.transparent_btn:hover {
+  background-color: rgba(255,255,255, 0.3);
+  color: #FFF;
+  border: 1px solid #FFF;
+}
+
+a.transparent_btn:focus, button.transparent_btn:focus {
+  background-color: rgba(255,255,255, 0);
+  color: #FFF;
+  border: 1px solid #FFF;
+  box-shadow: 0 0 20px rgb(206, 169, 113);
+  outline: none;
 }
 
 div.buttons {
@@ -105,41 +92,59 @@ label {
 }
 
 #search-input {
-background-color: rgba(255,255,255, 0);
-border: 1px solid #FFF;
-text-decoration: none;
-padding: 10px 14px;
-font-size: 14px;
-line-height: 120%;
-font-family: 'Raleway', sans-serif;
-color: #FFF;
-margin-right: 0px;
+  background-color: rgba(255,255,255, 0);
+  border: 1px solid #FFF;
+  text-decoration: none;
+  padding: 10px 14px;
+  font-size: 14px;
+  line-height: 120%;
+  font-family: 'Raleway', sans-serif;
+  color: #FFF;
+  margin-right: 0px;
 }
 
 ::placeholder {
-color: #FFF;
+  color: #FFF;
 }
 
 input:focus { 
-outline: none !important;
-border-color: rgb(206, 158, 113);
-box-shadow: 0 0 20px rgb(206, 169, 113);
+  outline: none !important;
+  border-color: rgb(206, 158, 113);
+  box-shadow: 0 0 20px rgb(206, 169, 113);
 }
 
-a.signup {
-margin: 0 70px 0 30px;;
-}
-
-a.search {
-margin-left: 0px;
-}
 
 .arrow {
-display: block;
-position: fixed;
-bottom: 35px;
-left: 48%;
-margin: 0 auto;
+  display: block;
+  position: fixed;
+  bottom: 35px;
+  left: 49%;
+  margin: 0 auto;
+}
+
+#intro {
+  background: rgb(218, 215, 212);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+  bottom: 0px;
+  font-family: 'Raleway', sans-serif;
+} 
+
+#intro h5, p {
+  color: #75450d;
+}
+
+.intro-text {
+  padding: 10px 40px;
+  line-height: 2.5em;
+}
+
+.intro-header {
+  text-align: left;
+  padding-left: 40px;
+  font-size: 18px;
+  font-family: 'Bukhari', sans-serif;
 }
 
 @font-face {
@@ -150,4 +155,30 @@ margin: 0 auto;
 @font-face {
   font-family: Nickainley;
   src: url(Nickainley.ttf);
+}
+
+#footer {
+  background: rgb(82, 73, 64);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+  bottom: 0px;
+  font-family: 'Raleway', sans-serif;
+}
+
+#footer-list {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  color: whitesmoke;
+  list-style-type: none;
+}
+
+ul > li > a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+ul > li > a:hover {
+  text-decoration: none;
+  color: rgb(211, 136, 51);
 }
