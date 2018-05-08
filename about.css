@@ -12,7 +12,7 @@ body {
     right: 0; 
     top: 0;
     min-width: 100vh; 
-    min-height: 100vh;
+    min-height: 75vh;
     width: auto; 
     height: auto;
     z-index: -100;
@@ -26,12 +26,12 @@ body {
   }
 
   #logo-img {
-    height: 65vh;
+    height: 20vh;
   }
   
   div.logo {
     display: flex;
-    height: 80vh;
+    height: 15vh;
     margin-right: 50px;
     justify-content: center;
     align-items: center;
@@ -57,13 +57,13 @@ h1 {
   color: #FFF;
   font-family: 'Raleway', sans-serif;
   font-size: 80px;
-  padding-top: 50px;
+  padding-top: 5px;
 }
 
 .row-big {
   display: flex;
   background-color: white;
-  padding: 30px;
+  padding-top: 30px;
   justify-content: center;  
 }  
 
