@@ -9,7 +9,7 @@ This project is broken down into these 3 pages:
 
 1. Home Page that includes:
 * Moving Background Video
-* Navigation Bar that includes Sign Up Modal + Search Bar
+* Navigation Bar that includes Sign Up Modal (accomplished via EmailJS) + Search Bar 
 * Footer Bar with About Us Button
 
 2. Search Results Page that includes: 
@@ -31,3 +31,4 @@ This project is broken down into these 3 pages:
 * Powder Project API = https://www.powderproject.com/data
 * Google Maps API = https://developers.google.com/maps/documentation/
 * Open Weather Map API = https://openweathermap.org/current
+* EmailJS API = https://www.emailjs.com/docs/
