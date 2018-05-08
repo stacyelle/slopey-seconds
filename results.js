@@ -8,7 +8,7 @@ $(function(){
     
     Promise.all([promiseTrail, promiseWeather])
         .then(function (responses) {
-            //console.log (responses);
+            console.log (responses);
             var returnedWeather = renderWeather(responses);
             var returnedTrails = renderTrails(responses); 
             $('.SRHeader').append(returnedWeather)
@@ -32,7 +32,6 @@ $(function(){
 
     function renderTrails(responses) {
         var finalHTML = '';
-        
         
         responses[0].trails.forEach(function(currentTrail) {
             finalHTML += '<div class="card">';
