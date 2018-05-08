@@ -24,13 +24,13 @@ $('document').ready(function() {
             }, 1000)
         $(this).attr('disabled', '');
         }, function(err) {
-            alert('submission failed, please try again')
+            alert('Submission failed - please try again!')
         });
+
+        $('#modalSubscriptionForm').on('hidden.bs.modal', function (e) {           
+            location.reload();
+            $('#modalSubscriptionForm').show();
+        })
     });
-   //  Trying to clear the data + clear the new div after --- BEWARE TESTING, we only have 100 email attempts left
-   //  before we have to $$$$$$
-   //  $('#modalSubscriptionForm').on('click', '.modal', function () {
-   //      $(this).removeData('.modal-body');
-   //    });
 });
         
