@@ -14,8 +14,8 @@ $(document).ready(function() {
                 lat = response.results[0].geometry.location.lat;
                 //console.log(lon);
                 //console.log(lat);
-                window.location = `www.slopeyseconds.com/results?lat=${lat}&lon=${lon}&maxDistance=200&maxResults=500&key=7046239-5096e852b476adae0deb9f9bafa8d07c`;
-                //window.location = `results.html?lat=${lat}&lon=${lon}&maxDistance=200&maxResults=500&key=7046239-5096e852b476adae0deb9f9bafa8d07c`;
+                //window.location = `www.slopeyseconds.com/results?lat=${lat}&lon=${lon}&maxDistance=200&maxResults=500&key=7046239-5096e852b476adae0deb9f9bafa8d07c`;
+                window.location = `./results.html?lat=${lat}&lon=${lon}&maxDistance=200&maxResults=500&key=7046239-5096e852b476adae0deb9f9bafa8d07c`;
                 // $.get({
                 //     url:  `https://www.powderproject.com/data/get-trails?lat=${lat}&lon=${lon}&maxDistance=200&maxResults=500&key=7046239-5096e852b476adae0deb9f9bafa8d07c`,
                 //     method: "GET",
