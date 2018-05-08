@@ -31,6 +31,26 @@ div.jumbotron {
   padding: 0px;
 }
 
+#intro {
+background: rgb(223, 222, 221);
+padding-top: 30px;
+padding-bottom: 30px;
+position: relative;
+bottom: 00px;
+font-family: 'Raleway', sans-serif;
+text-align: center;
+} 
+
+#intro h5, p {
+color: #75450d;
+text-align: center;
+}
+
+.intro-text {
+  padding: 10px 20px;
+  line-height: 2.5em;
+}
+
 
 #logo-img {
   height: 55vh;
@@ -166,19 +186,23 @@ input:focus {
   font-family: 'Raleway', sans-serif;
 }
 
-#footer-list {
-  font-family: 'Raleway', sans-serif;
-  font-size: 14px;
-  color: whitesmoke;
-  list-style-type: none;
+
+.row-footer {
+  margin-top: 60px;
 }
 
-ul > li > a {
-  text-decoration: none;
-  color: whitesmoke;
+.row-footer a {
+  display: flex;
+	color: white; 
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+  justify-content: center;
 }
 
-ul > li > a:hover {
-  text-decoration: none;
-  color: rgb(211, 136, 51);
+.trademarks {
+	color: white; 
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+  text-align: center;
+  padding: 20px;
 }

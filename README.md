@@ -8,17 +8,18 @@ This project combines the Google Maps API and the Powder Project API to search f
 This project is broken down into these 3 pages:
 
 1. Home Page that includes:
-* Moving Background Image
-* Navigation Bar that includes Sign Up Modal + Search Bar
+* Moving Background Video
+* Navigation Bar that includes Sign Up Modal (accomplished via EmailJS) + Search Bar 
 * Footer Bar with About Us Button
 
 2. Search Results Page that includes: 
 * Name of Trail
-* Google Map Image (Based on Longitude / Latitude)
+* Photo of Trail from Powder Project API
 * Difficulty
 * Trail Length
-* 0-4 Star Rating System
+* 0-5 Star Rating System
 * Elevation 
+* Weather from Open Weather Map API 
 
 3. About Page that includes: 
 * Logo
@@ -27,5 +28,7 @@ This project is broken down into these 3 pages:
 
 ## APIs Used
 
-Powder Project API = https://www.powderproject.com/data
-Google Maps API = https://developers.google.com/maps/documentation/
+* Powder Project API = https://www.powderproject.com/data
+* Google Maps API = https://developers.google.com/maps/documentation/
+* Open Weather Map API = https://openweathermap.org/current
+* EmailJS API = https://www.emailjs.com/docs/
