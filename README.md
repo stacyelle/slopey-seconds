@@ -28,6 +28,6 @@ This project is broken down into these 3 pages:
 
 ## APIs Used
 
-Powder Project API = https://www.powderproject.com/data
-Google Maps API = https://developers.google.com/maps/documentation/
-Open Weather Map API = https://openweathermap.org/current
+* Powder Project API = https://www.powderproject.com/data
+* Google Maps API = https://developers.google.com/maps/documentation/
+* Open Weather Map API = https://openweathermap.org/current
