@@ -23,8 +23,8 @@ $(function(){
         var weatherHTML = '';
 
         weatherHTML += `<h5 class="intro-header">Search Results for: ${returnedLocation}</h5>`;
-        weatherHTML += `<h6 class="weather">High: ${returnedWeatherHigh}&#8457</h6>`;
-        weatherHTML += `<h6 class="weather">Low: ${returnedWeatherLow}&#8457</h6>`; 
+        weatherHTML += `<h6 class="weather temp">High: ${returnedWeatherHigh}&#8457</h6>`;
+        weatherHTML += `<h6 class="weather temp">Low: ${returnedWeatherLow}&#8457</h6>`; 
         weatherHTML += `<h6 class="weather">${weatherDescription}</h6>`;     
         
         return weatherHTML;
@@ -41,14 +41,14 @@ $(function(){
             finalHTML += '<img class="w-100" src=' + currentTrail.imgSmall + '>';
             finalHTML += '</div>';
             finalHTML += '<div class="col-md-8 px-3">'
-            finalHTML += '<div class="card-block px-3">';
+            finalHTML += '<div class="card-block px-3 text-center">';
             finalHTML += '<h5 class="card-title">' + currentTrail.name + '</h5>';
             finalHTML += '<h6 class="card-subtitle mb-2 text-muted">' + currentTrail.location + '</h6>';
             finalHTML += '<p class="card-text">Descent: ' + currentTrail.descent + '</p>';
             finalHTML += '<p class="card-text">difficulty: ' + currentTrail.difficulty + '</p>';
             finalHTML += '<p class="card-text">Stars: ' + currentTrail.stars + '</p>';
             finalHTML += '<p class="card-text">Star Votes: ' + currentTrail.starVotes + '</p>';
-            finalHTML += '<a href=' + currentTrail.url + 'class="btn btn-primary">More Info</a>';
+            finalHTML += '<a class="btn btn-primary btn-sm" href=' + currentTrail.url + 'role="button">More Info</a>';
             finalHTML += '</div>'
             finalHTML += '</div>'
             finalHTML += '</div>'
