@@ -19,10 +19,12 @@ body {
   }
   
   #overlay {
-    position: absolute;
+    position: fixed;
     top: 0; right: 0; left: 0; bottom: 0;
      z-index: -99;
     background: rgba(151,82,14,0.3);
+    height: 100vh;
+    margin:0 px;
   }
 
   #logo-img {
@@ -51,27 +53,35 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-h2 {
+h3 {
   display: flex;
   justify-content: center;
   color: #FFF;
   font-family: 'Raleway', sans-serif;
-  font-size: 65px;
+  font-size: 40px;
   padding-top: 5px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
+
 
 .row-big {
   display: flex;
-  background-color: white;
+  background-color: rgba(255,255,255, 0);
   padding-top: 30px;
-  padding-left: 80px;
-  justify-content: space-around;  
+  justify-content: center;  
 }  
 
 .row two + one {
-display: flex;  
-flex-wrap: nowrap;
-width: 400px;
+  display: flex;  
+  /*margin: 100px;
+  /* flex-wrap: wrap; */ 
+ /* display: flex;*/
+  flex-wrap: nowrap;
+  width: 400px; 
+  /* align-content: center; */
+  /* align-items: flex-start; */
+ /* background-color: white; */
 }   
 
 .card-img-top {
@@ -80,10 +90,19 @@ width: 400px;
   width: 400px;
 }
   
+.card {
+  background-color: rgba(255,255,255, 0.6);
+  padding: 10px;
+  margin: 10px;
+  width: 190px;
+}
+
 .card-body {
   text-align: left;
   width: 250px;
   font-family: 'Raleway', sans-serif;
+  background-color: rgba(255,255,255, 0);
+
 }
 
 .transparent_btn {
@@ -95,7 +114,7 @@ width: 400px;
 	font-size: 14px;
 	line-height: 120%;
 	background-color: rgba(255,255,255, 0);
-	border-radius: 4px;
+	border-radius: none;
 	transition: background-color 300ms ease;
     cursor: pointer;
     font-family: 'Raleway', sans-serif;
