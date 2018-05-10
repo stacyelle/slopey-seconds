@@ -1,203 +1,251 @@
 body {
-    margin: 0px;
-    padding: 0px;
-    /*  Background fallback in case of IE8 & or in case video doens't load */
-    background: rgb(223, 222, 221);
+    margin: 0;
+    padding: 0;
+  /*  Background fallback in case of IE8 & or in case video doens't load */
+    background: #333;
     background-attachment: fixed;
     background-size: cover;
-}
+        color: whitesmoke;
+  }
   
-#video-background {
+  #video-background {
     position: fixed;
     right: 0; 
     top: 0;
+    min-width: 100vh; 
+    min-height: 75vh;
+    width: auto; 
     height: auto;
-    max-width: 1800px;
     z-index: -100;
-}
+  }
   
-div.jumbotron {
-    background-color: rgba(151,82,14,0.3);
-    margin-top: 0px;
-    max-height: 1200px;
-    min-height: 700px;
-    min-width: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    -webkit-background-size: cover;
-    background-size: cover;
-    border-radius: 0px;
-}
-  
-#intro {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    position: relative;
-    bottom: 00px;
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-} 
-  
-#intro h5, h6, p {
-    color: #75450d;
-    text-align: center;
-}
-  
-.intro-text {
-    padding: 10px 20px;
-    line-height: 2.5em;
-}
-  
-.intro-header {
-    text-align: left;
-    padding-left: 20px;
-    font-size: 18px;
-}
-  
+  #overlay {
+    position: fixed;
+    top: 0; right: 0; left: 0; bottom: 0;
+     z-index: -99;
+    background: rgba(151,82,14,0.3);
+    height: 100vh;
+    margin:0 px;
+  }
+
 #logo-img {
-    height: 55vh;
+    max-height: 20vh;
+    
 }
   
 div.logo {
-    display: flex;
-    height: 70vh;
-    width: auto;
-    margin-right: 50px;
-    justify-content: center;
-    align-items: center;
+    max-height: 20vh;
+    max-width: 40vh;
+}
+  
+#intro {
+padding-top: 30px;
+padding-bottom: 30px;
+position: relative;
+bottom: 00px;
+font-family: 'Raleway', sans-serif;
+text-align: center;
+} 
+  
+#intro h5, h6, p {
+color: rgb(233, 216, 207);
+text-align: center;
+}
+  
+p.card-text {
+    color: rgb(155, 104, 37);
+}
+
+.intro-text {
+padding: 10px 20px;
+line-height: 2.5em;
+}
+  
+.intro-header {
+text-align: left;
+padding-left: 20px;
+font-size: 18px;
+}
+  
+#logo-img {
+height: 55vh;
+}
+  
+div.logo {
+display: flex;
+height: 70vh;
+width: auto;
+margin-right: 50px;
+justify-content: center;
+align-items: center;
 }
   
 .transparent_btn {
-    display: inline-block;
-    padding: 10px 14px;
-    color: #75450d;
-    border: 1px solid #75450d;
-    text-decoration: none;
-    font-size: 14px;
-    line-height: 120%;
-    background-color: rgba(255,255,255, 0);
-    /* border-radius: 4px; */
-    transition: background-color 300ms ease;
-    cursor: pointer;
-    font-family: 'Raleway', sans-serif;
+display: inline-block;
+padding: 10px 14px;
+color: whitesmoke;
+border: 1px solid whitesmoke;
+text-decoration: none;
+font-size: 14px;
+line-height: 120%;
+background-color: rgba(255,255,255, 0);
+/* border-radius: 4px; */
+transition: background-color 300ms ease;
+cursor: pointer;
+font-family: 'Raleway', sans-serif;
 }
   
 .transparent_btn:hover {
-    background-color: rgba(255,255,255, 0.3);
-    color: #75450d;
+background-color: rgba(255,255,255, 0.3);
+color: whitesmoke;
+text-decoration: none;
 }
   
 div.buttons {
-    display: flex;
-    /* width: 80vh; */
-    padding: 20px 50px 0px 50px;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: flex-end;
+display: flex;
+width:100%;
+padding: 20px 50px 0px 50px;
+margin-left: auto;
+margin-right: auto;
+justify-content: space-around;
+align-items: center;
 }
 
 label {
-    font-family: 'Raleway', sans-serif;
+font-family: 'Raleway', sans-serif;
 }
-  
+
+#home-button {
+    max-height: 38px;
+}
 #search-input {
-    background-color: rgba(255,255,255, 0);
-    border: 1px solid #75450d;
-    text-decoration: none;
-    padding: 10px 14px;
-    font-size: 14px;
-    line-height: 120%;
-    font-family: 'Raleway', sans-serif;
-    color: #75450d;
-    margin-right: 0px;
+background-color: rgba(255,255,255, 0);
+border: 1px solid whitesmoke;
+text-decoration: none;
+padding: 10px 14px;
+font-size: 14px;
+line-height: 120%;
+font-family: 'Raleway', sans-serif;
+color: whitesmoke;
+margin-right: 0px;
 }
   
 ::placeholder {
-    color: #75450d;
+color: whitesmoke;
 }
   
 input:focus { 
-    outline: none !important;
-    border-color: rgb(206, 158, 113);
-    box-shadow: 0 0 20px rgb(206, 169, 113);
+outline: none !important;
+border-color: rgb(206, 158, 113);
+box-shadow: 0 0 20px rgb(206, 169, 113);
 }
   
 a.signup {
-    margin: 0 70px 0 30px;;
+margin: 0 70px 0 30px;;
 }
   
 a.search {
-    margin-left: 0px;
+margin-left: 0px;
 }
   
 .arrow {
-    display: block;
-    position: fixed;
-    bottom: 35px;
-    left: 48%;
-    margin: 0 auto;
+display: block;
+position: fixed;
+bottom: 35px;
+left: 48%;
+margin: 0 auto;
 }
   
 .row-footer {
-    margin-top: 60px;
+margin-top: 60px;
 }
   
 .row-footer a {
-    display: flex;
-    color: white; 
-    font-family: 'Raleway', sans-serif;
-    font-size: 15px;
-    justify-content: center;
+display: flex;
+color: white; 
+font-family: 'Raleway', sans-serif;
+font-size: 15px;
+justify-content: center;
 }
   
 .trademarks {
-    color: white; 
-    font-family: 'Raleway', sans-serif;
-    font-size: 15px;
-    text-align: center;
-    padding: 20px;
+color: white; 
+font-family: 'Raleway', sans-serif;
+font-size: 15px;
+text-align: center;
+padding: 20px;
 }
 
 .cardTrails {
-    color: black;
+color: rgb(71, 71, 71);
+font-family: 'Raleway', sans-serif;
 }
 
 img {
-    height: 100%;
-    position: absolute;
+height: 100%;
+position: absolute;
 }
 
 .card {
-    margin: 30px;
-    border: 3px solid #75450d;
+margin: 30px;
+/* border: 1px solid whitesmoke; */
+background-color: rgba(255,255,255, 0.3);
+font-family: 'Raleway', sans-serif;
 }
 
 .cardTrails h5 {
-    text-align: center;
+text-align: center;
+font-family: 'Raleway', sans-serif;
 }
 
 .btn-primary {
     margin-bottom: 5px;
-    background-color: white;
-    color: black;
-    border: 1px solid #75450d;
+    background-color: rgb(172, 128, 63, 0.5);
+    color: whitesmoke;
+    border: none;
+    margin: 5px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#favorite {
+    background-color: rgb(172, 128, 63, 0.5);
+}
+
+#favorite:hover, .btn-primary:hover  {
+    box-shadow: none;
+    border: none;
+    background-color: rgba(39, 24, 3, 0.616);
+    color: whitesmoke;
+}
+
+#favorite:focus, .btn-primary:focus {
+    box-shadow: none;
+    border: none;
 }
 
 .card-block {
-    border-left: 3px solid #75450d;
+/* border-left: 1px solid whitesmoke; */
+background-color: rgba(255,255,255, 0.3);
+font-family: 'Raleway', sans-serif;
 }
 
 .SRHeader {
     text-align: center;
+    color: whitesmoke;
+    font-family: 'Raleway', sans-serif;
 }
 
 .SRHeader h5 {
     font-size: 30px;
     font-weight: bold;
+    color: whitesmoke;
+    font-family: 'Raleway', sans-serif;
 }
 
 .temp {
     font-size: 20px;
+    color: whitesmoke;
+    font-family: 'Raleway', sans-serif;
 }
 
 .stars-outer {
@@ -221,5 +269,5 @@ img {
    
 .stars-inner::before {
     content: "\f005 \f005 \f005 \f005 \f005";
-    color: #f8ce0b;
+    color: #d39d28;
 }
