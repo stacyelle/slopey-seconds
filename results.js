@@ -22,7 +22,7 @@ $(function(){
         var weatherDescription = responses[1].weather[0].description;
         var weatherHTML = '';
 
-        weatherHTML += `<h5 class="intro-header">Search Results for: ${returnedLocation}</h5>`;
+        weatherHTML += `<h5 class="intro-header">Slopey Trails for: ${returnedLocation}</h5>`;
         weatherHTML += `<h6 class="weather temp">High: ${returnedWeatherHigh}&#8457</h6>`;
         weatherHTML += `<h6 class="weather temp">Low: ${returnedWeatherLow}&#8457</h6>`; 
         weatherHTML += `<h6 class="weather">${weatherDescription}</h6>`;     
@@ -32,13 +32,12 @@ $(function(){
 
     function renderTrails(responses) {
         var finalHTML = '';
-
+        
         responses[0].trails.forEach(function(currentTrail) {
-
             var starPercentageRounded = `${(Math.round(currentTrail.stars) * 10)}%`;
-            console.log(starPercentageRounded);
+            // console.log(starPercentageRounded);
             $('.stars-inner').width(starPercentageRounded);
-            console.log(this.width);
+            // console.log(this.width);
 
             finalHTML += '<div class="card">';
             finalHTML += '<div class="row">';
@@ -57,16 +56,28 @@ $(function(){
             finalHTML += '<div class="stars-inner"></div>';
             finalHTML += '</div>';
             finalHTML += '<a class="btn btn-primary btn-sm" href=' + currentTrail.url + 'role="button">More Info</a>';
-            finalHTML += '</div>';
-            finalHTML += '</div>';
-            finalHTML += '</div>';
-            finalHTML += '</div>';
-            finalHTML += '</div>';
-
+            finalHTML += '<a id="favorite" data-favorited="false" class="btn btn-primary btn-sm" href=# role="button">Favorite</a>';
+            finalHTML += '</div>'
+            finalHTML += '</div>'
+            finalHTML += '</div>'
+            finalHTML += '</div>'
+            finalHTML += '</div>'
         });
         return finalHTML;
-            
-         
     };
+
+    $('.cardTrails').on('click', '#favorite', function(e){
+        var favorited = $(this).data("favorited")
+        if (favorited === false) {
+            e.preventDefault();
+            $(this).css('background-color', 'rgb(133, 30, 93, 0.6)');
+            $(this).data("favorited", true)
+        } else {
+            e.preventDefault();
+            $(this).css('background-color', 'rgb(172, 128, 63, 0.5)');
+            $(this).data("favorited", false)
+        }
+    })
+
 });
-    
+
