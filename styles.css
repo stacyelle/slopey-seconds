@@ -1,10 +1,21 @@
-body {
+html {
+  width: cover;
   margin: 0px;
+  padding: 0px;
+  /* position: fixed; */
+}
+
+
+body {
+  margin-right: 0px;
   padding: 0px;
 /*  Background fallback in case of IE8 & or in case video doens't load */
   background: #333;
   background-attachment: fixed;
   background-size: cover;
+  min-width: 100%;
+  position: relative;
+  top: 0; right: 0; left: 0; bottom: 0;
 }
 
 #video-background {
@@ -16,21 +27,30 @@ body {
   z-index: -100;
 }
 
+div.container {
+    position: fixed;
+    top: 0; right: 0; left: 0; bottom: 0;
+}
+
 div.jumbotron {
   background-color: rgba(151,82,14,0.3);
   margin-top: 0px;
   margin-bottom: 0px;
-  max-height: 1200px;
+  margin-right: 0px;
+  max-height: 1800px;
   min-height: 700px;
-  min-width: cover;
+  min-width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
   background-size: cover;
   border-radius: 0px;
-  padding: 0px;
+  padding: 0px 0px 0px 0px;
+  position: relative;
+  top: 0; right: 0; left: 0; bottom: 0;
 }
 
+/* 
 #intro {
 background: rgb(223, 222, 221);
 padding-top: 30px;
@@ -50,7 +70,7 @@ text-align: center;
   padding: 10px 20px;
   line-height: 2.5em;
 }
-
+ */
 
 #logo-img {
   height: 55vh;
@@ -112,6 +132,10 @@ div.buttons {
   font-family: 'Raleway', sans-serif;
 }
 
+label {
+  font-family: 'Raleway', sans-serif;
+}
+
 #search-input {
   background-color: rgba(255,255,255, 0);
   border: 1px solid #FFF;
@@ -141,31 +165,63 @@ input:focus {
   bottom: 35px;
   left: 49%;
   margin: 0 auto;
+  z-index: -98;
 }
 
-#intro {
-  background: rgb(218, 215, 212);
-  padding-top: 30px;
-  padding-bottom: 30px;
+div.intro-div {
+  background: rgb(218, 215, 212, 0);
+  /* padding-top: 30px;
+  padding-bottom: 30px; */
   position: relative;
+  left: 15px;
   bottom: 0px;
   font-family: 'Raleway', sans-serif;
+  width: 100%;
+  /* padding-bottom: 10px; */
 } 
 
-#intro h5, p {
+div.col-8 {
+  background: rgb(218, 215, 212, 0.9);
+  padding-bottom: 10px;
+}
+
+div.col-8 > h5 {
+  color: rgb(161, 124, 82);
+}
+
+div.col-8 > span {
   color: #75450d;
 }
 
-.intro-text {
-  padding: 10px 40px;
-  line-height: 2.5em;
+div.trademarks > p, div.footer > a{
+  position: relative;
+  right: 0px;
+  text-align: right;
 }
 
-.intro-header {
+div.intro-text {
+  border: 30px;
+  line-height: 2.5em;
+  display: inline-block;
+  text-align: justify;
+  position: relative;
+  left: 60px;
+  top: 20px;
+  font-size: 14px;
+  margin-right: 20px;
+  padding-right: 60px;
+  padding-top: 20px;
+}
+
+h5.intro-header {
   text-align: left;
-  padding-left: 40px;
+  margin: 20px 40px;
   font-size: 18px;
   font-family: 'Bukhari', sans-serif;
+  display: inline;
+  position: relative;
+  left: 20px;
+  top: 20px;
 }
 
 @font-face {
@@ -178,32 +234,38 @@ input:focus {
   src: url(Nickainley.ttf);
 }
 
-#footer {
-  background: rgb(82, 73, 64);
-  padding-top: 30px;
-  padding-bottom: 30px;
+div.col-4 {
+  background: rgb(82, 73, 64, 0.6);
+  padding-top: 20px;
+  padding-bottom: 10px;
   position: relative;
   bottom: 0px;
   font-family: 'Raleway', sans-serif;
 }
 
-
-.row-footer {
+/* 
+.footer {
   margin-top: 60px;
-}
+} */
 
-.row-footer a {
+.footer a {
   display: flex;
-	color: white; 
+	color: whitesmoke; 
 	font-family: 'Raleway', sans-serif;
 	font-size: 15px;
   justify-content: center;
+  padding: 5px;
+  text-decoration: none;
 }
 
-.trademarks {
-  color: white;
+.footer a:hover {
+  color: rgb(161, 124, 82);
+}
+
+div.trademarks > p {
+	color: rgb(161, 124, 82); 
 	font-family: 'Raleway', sans-serif;
-	font-size: 15px;
+	font-size: 10px;
   text-align: center;
   padding: 20px;
 }
