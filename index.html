@@ -22,73 +22,81 @@
     <script src="modalButton.js"></script>
 </head>
 <body>
-    <div class="jumbotron">
-        <video autoplay loop id="video-background" muted plays-inline>
-            <source src="img/snowboard.mp4" type="video/mp4">
-        </video>
-        <div id="overlay"></div>
-        <div class="container">
-            <div class="title">
+    <!-- <div class="container"> -->
+        <div class="jumbotron">
+            <video autoplay loop id="video-background" muted plays-inline>
+                <source src="img/snowboard.mp4" type="video/mp4">
+            </video>
+            <div class="title"></div>
                 <div class="buttons">
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn transparent_btn signup" data-toggle="modal" data-target="#modalSubscriptionForm">sign up</button>
-                        <div class="modal fade" id="modalSubscriptionForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <button type="button" class="btn transparent_btn signup"   data-toggle="modal"data-target="#modalSubscriptionForm">sign  up</button>
+                        <div class="modal fade" id="modalSubscriptionForm" tabindex="-1" role="dialog"aria-labelledby="myModalLabel"   aria-hidden="true">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header text-center">
-                                        <h4 class="modal-title w-100 font-weight-bold">Subscribe to Slopey Seconds!</h4>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
+                                        <h4 class="modal-title w-100   font-weight-bold">Subscribe to Slopey Seconds!</h4>
+                                        <button type="button" class="close"    data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times</span>
                                         </button>
                                     </div>
-                                    <div class="modal-body mx-3 text-center">
-                                        <div class="md-form mb-5 text-center">
-                                            <i class="fa fa-user prefix grey-text"></i>
-                                            <input type="text" id="name" class="form-control validate">
-                                            <label data-error="wrong" data-success="right" for="form3">Your name</label>
+                                    <div class="modal-body mx-3">
+                                        <div class="md-form mb-5">
+                                            <i class="fa fa-user prefix    grey-text"></i>
+                                            <input type="text" id="name"   class="form-control validate">
+                                            <label data-error="wrong"  data-success="right"for="form3">Your     name</label>
                                         </div>
-                                        <div class="md-form mb-4 text-center">
-                                            <i class="fa fa-envelope prefix grey-text"></i>
+                                        <div class="md-form mb-4">
+                                            <i class="fa fa-envelope prefix    grey-text"></i>
                                             <input type="email" id="email" class="form-control validate">
-                                            <label data-error="wrong" data-success="right" for="form2">Your email</label>
+                                            <label data-error="wrong"  data-success="right"for="form2">Your     email</label>
                                         </div>
                                     </div>
-                                    <div class="modal-footer d-flex justify-content-center">
-                                        <button class="btn btn-signup">Send</button>
+                                    <div class="modal-footer d-flex    justify-content-center">
+                                        <button class="btnbtn-signup">Send</button>
                                     </div>
                                 </div>
                             </div>
                         </div>      
                     <div class="search-container">
                         <form>
-                            <input id="search-input" type="text" placeholder="Enter a city, state..." name="search">
-                            <a id="search-button" href="/searchResults.html" class="transparent_btn search">get slopey!</a>
+                            <input id="search-input" type="text"placeholder="Enter a city, state..."name="search">
+                            <a id="search-button" href="/searchResults.html"   class="transparent_btn search">get slopey!</a>
                         </form>
                     </div>
                 </div>
                 <div class="logo">
                     <img id="logo-img" src="img/logo-transparent.png" />
-                <!-- </div>
+                </div>
                 <img class='arrow' src='./img/down_arrow.png' />
-            </div> -->
-        </div>
+            </div>
+        <!-- </div> -->
     </div>
-    <div id="intro">
-        <div class="container d-flex">
-            <h5 class="intro-header">What Is Slopey Seconds?</h5>
+    <div class="row intro-div">
+        <div class="col-8">
+            <h5 class="intro-header">What Is Slopey Seconds?</h5>    
+            <div class="intro-text">That run sure is pretty sweet. Maybe you have a shot at shredding it, maybe you don’t. Maybe it’s deceptively out of your league. Don’t worry... odds are, someone has been there before you. Welcome to Slopey Seconds. The place to find out what you’re in for before you get your heart broken... or your leg.  </div>
         </div>
-        <div class="container d-flex intro">
-            <p class="intro-text">That run sure is pretty sweet. Maybe you have a shot at shredding it, maybe you don’t. Maybe it’s deceptively out of your league. Don’t worry... odds are, someone has been there before you. Welcome to Slopey Seconds. The place to find out what you’re in for before you get your heart broken... or your leg.  </p>
+        <div class="col-4">
+            <div class="footer">
+                <a href="./about.html">About Us</a>
+                <a href="./about.html">Contact Us</a>
+                <a href="./about.html">Work With Us</a>
+                <a href="https://www.instagram.com/slopeyseconds/">Follow Us</a>
+            </div>
+            <div class="trademarks">
+                <p>&copy;Slopey Seconds, Inc.</p>   
+            </div>
         </div>
     </div>
 
-    <div class="row-footer">
+    <!-- <div class="row-footer">
         <div class="footer">
             <a href="./about.html">About Us</a>
         </div>
         <div class="trademarks">
             <p>&copy;Slopey Seconds, Inc.</p>   
         </div>
-    </div>
+    </div> -->
 </body>
 </html>
