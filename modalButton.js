@@ -22,6 +22,7 @@ $('document').ready(function() {
             window.setTimeout(function() {
                 $('#modalSubscriptionForm').modal('hide'); 
             }, 1000)
+            
         $(this).attr('disabled', '');
         }, function(err) {
             alert('Submission failed - please try again!')
