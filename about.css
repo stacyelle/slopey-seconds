@@ -87,7 +87,7 @@ h3 {
 .card-img-top {
   display: flex;
   height: 200px;
-  width: 300px;
+  width: 250px;
 }
   
 .card {
@@ -102,7 +102,7 @@ h3 {
   width: 200px;
   font-family: 'Raleway', sans-serif;
   background-color: rgba(255,255,255, 0);
-
+  padding: 5px;
 }
 
 .transparent_btn {
