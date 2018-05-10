@@ -1,10 +1,10 @@
 $(document).ready(function(){
     $("#carlyimg ").hover(
         function () {
-            $(this).attr("src", "./img/bitmoji.jpg");
+            $(this).attr("src", "./img/photos/carly-goofy.jpg");
         },
         function () {
-            $(this).attr("src", "./img/carly.jpg");
+            $(this).attr("src", "./img/photos/carly.jpg");
         }
     );
 })
@@ -12,10 +12,10 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#stacyimg ").hover(
         function () {
-            $(this).attr("src", "./img/bitmoji.jpg");
+            $(this).attr("src", "./img/photos/stacy-goofy.jpg");
         },
         function () {
-            $(this).attr("src", "./img/stacy.jpg");
+            $(this).attr("src", "./img/photos/stacy.jpg");
         }
     );
 })
@@ -24,10 +24,10 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#krissyimg ").hover(
         function () {
-            $(this).attr("src", "./img/bitmoji.jpg");
+            $(this).attr("src", "./img/photos/krissy-goofy.jpg");
         },
         function () {
-            $(this).attr("src", "./img/krissy.jpg");
+            $(this).attr("src", "./img/photos/krissy.jpg");
         }
     );
 })
@@ -35,10 +35,10 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#kamimg ").hover(
         function () {
-            $(this).attr("src", "./img/bitmoji.jpg");
+            $(this).attr("src", "./img/photos/kamilah-goofy.jpg");
         },
         function () {
-            $(this).attr("src", "./img/kam.jpg");
+            $(this).attr("src", "./img/photos/kamilah.jpg");
         }
     );
 })

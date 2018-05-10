@@ -77,6 +77,7 @@ width: 400px;
 .card-img-top {
   display: flex;
   height: 200px;
+  width: 400px;
 }
   
 .card-body {
@@ -114,16 +115,3 @@ div.buttons {
     margin-right: auto;
     justify-content: space-between;
 }
-/* 
-#Library {
-  height: 70px;
-  width: 120px;
-  background-image: url("/Users/kamilahamir-al-sharif/KamCodes/slopey-seconds/img/bitmoji.jpg");
-  background-size: cover;
-}
-
-#Library:hover {
-  background-image: url("/Users/kamilahamir-al-sharif/KamCodes/slopey-seconds/img/kam.jpg");
-  height: 70px;
-  width: 120px;
-} */
