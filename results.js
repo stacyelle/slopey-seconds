@@ -32,8 +32,14 @@ $(function(){
 
     function renderTrails(responses) {
         var finalHTML = '';
-        
+
         responses[0].trails.forEach(function(currentTrail) {
+
+            var starPercentageRounded = `${(Math.round(currentTrail.stars) * 10)}%`;
+            console.log(starPercentageRounded);
+            $('.stars-inner').width(starPercentageRounded);
+            console.log(this.width);
+
             finalHTML += '<div class="card">';
             finalHTML += '<div class="row">';
             finalHTML += '<div class="col-md-4">';
@@ -47,14 +53,20 @@ $(function(){
             finalHTML += '<p class="card-text">difficulty: ' + currentTrail.difficulty + '</p>';
             finalHTML += '<p class="card-text">Stars: ' + currentTrail.stars + '</p>';
             finalHTML += '<p class="card-text">Star Votes: ' + currentTrail.starVotes + '</p>';
+            finalHTML += '<div class="stars-outer">';
+            finalHTML += '<div class="stars-inner"></div>';
+            finalHTML += '</div>';
             finalHTML += '<a class="btn btn-primary btn-sm" href=' + currentTrail.url + 'role="button">More Info</a>';
-            finalHTML += '</div>'
-            finalHTML += '</div>'
-            finalHTML += '</div>'
-            finalHTML += '</div>'
-            finalHTML += '</div>'
+            finalHTML += '</div>';
+            finalHTML += '</div>';
+            finalHTML += '</div>';
+            finalHTML += '</div>';
+            finalHTML += '</div>';
+
         });
         return finalHTML;
+            
+         
     };
 });
-
+    
