@@ -14,6 +14,8 @@ This project is broken down into these 3 pages:
 * Navigation Bar that includes Sign Up Modal accomplished via EmailJS and Search Bar 
 * Footer with About Us Button
 
+![Screenshot](homepage.png)
+
 2. Search Results Page that includes: 
 * Name of Trail
 * Photo of Trail from Powder Project API
